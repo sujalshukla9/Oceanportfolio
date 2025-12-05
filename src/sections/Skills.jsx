@@ -4,14 +4,14 @@ import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub } from 'react-icons/fa';
 import { SiTailwindcss, SiFirebase, SiFramer } from 'react-icons/si';
 
 const skills = [
-    { name: 'HTML5', level: 'Advanced', color: 'text-orange-500', icon: FaHtml5 },
-    { name: 'CSS3', level: 'Advanced', color: 'text-blue-500', icon: FaCss3Alt },
-    { name: 'JavaScript', level: 'Advanced', color: 'text-yellow-400', icon: FaJs },
-    { name: 'React', level: 'Intermediate', color: 'text-cyan-400', icon: FaReact },
-    { name: 'Tailwind CSS', level: 'Advanced', color: 'text-teal-400', icon: SiTailwindcss },
+    { name: 'HTML5', level: 'Advanced', color: 'text-white', icon: FaHtml5 },
+    { name: 'CSS3', level: 'Advanced', color: 'text-white', icon: FaCss3Alt },
+    { name: 'JavaScript', level: 'Advanced', color: 'text-white', icon: FaJs },
+    { name: 'React', level: 'Intermediate', color: 'text-white', icon: FaReact },
+    { name: 'Tailwind CSS', level: 'Advanced', color: 'text-white', icon: SiTailwindcss },
     { name: 'Git & GitHub', level: 'Intermediate', color: 'text-white', icon: FaGithub },
-    { name: 'Firebase', level: 'Basic', color: 'text-yellow-500', icon: SiFirebase },
-    { name: 'Framer Motion', level: 'Intermediate', color: 'text-purple-500', icon: SiFramer },
+    { name: 'Firebase', level: 'Basic', color: 'text-white', icon: SiFirebase },
+    { name: 'Framer Motion', level: 'Intermediate', color: 'text-white', icon: SiFramer },
 ];
 
 const Skills = () => {
