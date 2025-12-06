@@ -88,7 +88,8 @@ const Contact = () => {
                                     href={social.href}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="w-10 h-10 rounded-full bg-white/5 border border-white/10 hover:bg-white/20 transition-all cursor-pointer flex items-center justify-center hover:scale-110 text-white"
+                                    aria-label={`Visit our ${social.icon.name || 'social'} page`}
+                                    className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:bg-white/20 transition-all cursor-pointer flex items-center justify-center hover:scale-110 text-white"
                                 >
                                     <social.icon size={18} />
                                 </a>
@@ -131,7 +132,7 @@ const Contact = () => {
                                                 type="text"
                                                 name="user_name"
                                                 required
-                                                className="w-full bg-white/5 border border-white/10 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-transparent transition-all placeholder-white/50"
+                                                className="w-full bg-white/5 border border-white/10 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-transparent transition-all placeholder-white/50 text-base"
                                                 placeholder="Enter your name"
                                             />
                                         </div>
@@ -142,7 +143,7 @@ const Contact = () => {
                                                 type="email"
                                                 name="user_email"
                                                 required
-                                                className="w-full bg-white/5 border border-white/10 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-transparent transition-all placeholder-white/50"
+                                                className="w-full bg-white/5 border border-white/10 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-transparent transition-all placeholder-white/50 text-base"
                                                 placeholder="Enter your email"
                                             />
                                         </div>
@@ -153,7 +154,7 @@ const Contact = () => {
                                                 name="message"
                                                 rows="4"
                                                 required
-                                                className="w-full bg-white/5 border border-white/10 text-white px-4 py-3 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-transparent transition-all placeholder-white/50"
+                                                className="w-full bg-white/5 border border-white/10 text-white px-4 py-3 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-transparent transition-all placeholder-white/50 text-base"
                                                 placeholder="Write your message here..."
                                             ></textarea>
                                         </div>

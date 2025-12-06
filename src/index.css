@@ -9,10 +9,19 @@
 
 html {
   scroll-behavior: smooth;
-
   scroll-padding-top: 5rem;
+  -webkit-text-size-adjust: 100%;
+  /* Prevent font scaling in landscape */
+  -webkit-tap-highlight-color: transparent;
+  /* Remove gray tap highlight */
+
 }
 
 body {
   @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300;
+  -webkit-font-smoothing: antialiased;
+  /* Sharper text on macOS/iOS */
+  -moz-osx-font-smoothing: grayscale;
+  touch-action: manipulation;
+  /* Improves touch response */
 }

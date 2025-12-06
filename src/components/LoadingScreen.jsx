@@ -13,14 +13,14 @@ const LoadingScreen = ({ onComplete }) => {
 
     return (
         <motion.div
-            className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-white/5 backdrop-blur-3xl shadow-[inset_0_0_50px_rgba(255,255,255,0.1)] text-white"
+            className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-white/5 backdrop-blur-xl shadow-[inset_0_0_50px_rgba(255,255,255,0.1)] text-white"
             initial={{ opacity: 1 }}
             exit={{ opacity: 0, transition: { duration: 0.8, ease: "easeInOut" } }}
         >
             <div className="relative flex items-center justify-center">
                 {/* Blue Orb */}
                 <motion.div
-                    className="absolute -inset-10 bg-blue-500/30 rounded-full blur-3xl"
+                    className="absolute -inset-10 bg-blue-500/30 rounded-full blur-3xl will-change-transform"
                     animate={{
                         scale: [1, 1.2, 1],
                         opacity: [0.3, 0.6, 0.3],
@@ -35,7 +35,7 @@ const LoadingScreen = ({ onComplete }) => {
 
                 {/* Purple Orb (New for depth) */}
                 <motion.div
-                    className="absolute -inset-10 bg-purple-500/20 rounded-full blur-3xl"
+                    className="absolute -inset-10 bg-purple-500/20 rounded-full blur-3xl will-change-transform"
                     animate={{
                         scale: [1.2, 1, 1.2],
                         opacity: [0.3, 0.5, 0.3],

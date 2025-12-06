@@ -27,8 +27,9 @@ const About = () => {
                     >
                         <img
                             src={aboutMeGraphic}
-                            alt="About Me Graphic"
+                            alt="Sujal Shukla - Frontend Developer"
                             loading="lazy"
+                            decoding="async"
                             className="w-full h-auto object-contain hover:scale-105 transition-transform duration-700 mix-blend-plus-lighter rounded-2xl transform-gpu"
                         />
 

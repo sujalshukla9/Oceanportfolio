@@ -4,7 +4,7 @@ import { ArrowRight, Download } from 'lucide-react';
 
 const Hero = () => {
     return (
-        <section id="hero" className="min-h-screen flex items-center justify-center pt-16 bg-transparent overflow-hidden relative">
+        <section id="hero" className="min-h-[100dvh] flex items-center justify-center pt-16 bg-transparent overflow-hidden relative">
             {/* Background Elements */}
             {/* Background Elements - Removed as per request */}
 

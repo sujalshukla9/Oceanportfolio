@@ -43,7 +43,9 @@ const SplitText = ({
             if (el._rbsplitInstance) {
                 try {
                     el._rbsplitInstance.revert();
-                } catch (_) { }
+                } catch (e) {
+                    // ignore
+                }
                 el._rbsplitInstance = undefined;
             }
 
@@ -102,7 +104,7 @@ const SplitText = ({
                                 animationCompletedRef.current = true;
                                 onLetterAnimationComplete?.();
                             },
-                            willChange: 'transform, opacity',
+                            willChange: 'transform, opacity, filter',
                             force3D: true
                         }
                     );
@@ -115,7 +117,9 @@ const SplitText = ({
                 });
                 try {
                     splitInstance.revert();
-                } catch (_) { }
+                } catch (e) {
+                    // ignore
+                }
                 el._rbsplitInstance = undefined;
             };
         },
